@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            background-color: bisque;
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <p>Interaja...</p>
+    </div>
+    <script>
+
+        var a = window.document.getElementById('area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout',sair)
+
+        var code = true
+        function clicar(){
+            if(code){
+                code = !code
+                a.innerText = 'clicou'
+                a.style.backgroundColor = 'red'
+            }
+            else {
+                a.innerText = 'desclicou'
+            }
+        }
+        function entrar(){
+            a.innerText = 'entrou'
+            a.style.backgroundColor = 'blue'
+        }
+        function sair(){
+            a.innerText = 'saiu'
+            a.style.backgroundColor = 'green'
+        }
+    </script>
+</body>
+</html>

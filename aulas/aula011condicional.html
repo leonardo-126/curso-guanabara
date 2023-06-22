@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>qual a sua velocidade: <input type="text" value="velocidade" id="if1"></p>
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var vel = window.document.querySelector('input#if1')
+            var res = window.document.querySelector('div#res')
+            var velr = Number(vel.value)
+            if (velr >80){
+                res.innerHTML = (`<p>vc foi multado por exesso de velocidade estaqndo a ${velr}</p>`)
+            }else {
+                res.innerHTML = (`<p>continue mantendo sempre a velocidade da via ${velr}</p>`)
+            }
+            res.innerHTML += ('sempre dirija com segurança')
+        }
+    </script>
+</body>
+</html>

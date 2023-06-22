@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style type="text/css">
+        .titulo{
+            font-size: 25px;
+            text-align: center;
+            border-bottom: solid 2px;
+            border-left: solid 4px;
+            width: 30vw;
+            padding: 10px;
+            margin: auto;
+            margin-top: 60px;
+            color: aliceblue;
+            background-color: #6a0e47;
+            cursor: pointer;
+        }
+        .titulo:hover{
+            background-color: #b50d57;
+            transition: 1s;
+        }
+        body{
+            background-color: #200e38;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo"><a href="file:///C:/Users/leopa/Desktop/cuso%20guanabara/troll.html">primeiros passos no java script</a></h1>
+    <script>
+        var nome = window.prompt('qual o seu nome')
+        var idade = window.prompt('qual e a sua idade')
+        if (idade < 18 ){
+            window.alert('Voce nao pode acessar este site')
+        }
+        else{
+            document.write(`bom dia senhor ${nome} qua bom ter o senhor conosco.`)
+        }
+    </script>
+</body>
+</html>

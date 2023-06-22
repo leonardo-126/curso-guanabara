@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a manipular o DOM</title>
+    <style type="text/css">
+        body{
+            background-color: bisque;
+            font-size: 23px;
+            font-family: arial;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando as propiedadesdas</h1>
+    <p>escreva aqui seu nome</p>
+    <p id="msg">apos isso começe a minipular dados</p>
+    <p>abc</p>
+    <input type="button" onclick="document.querySelector('#msg').style.backgroundColor = 'red'">
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('duplicando o primeiro paragrafo: <br><br>' + p1.innerText)
+        p1.style.color = 'blue'
+        corpo.style.backgroundColor = 'black'
+        console.log(corpo)
+        var d = window.document.getElementById('msg')
+        document.write('esperando o que seu merda ' + d.innerHTML)
+        d.innerText('ola')
+    </script>
+</body>
+</html>
